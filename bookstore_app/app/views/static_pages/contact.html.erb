@@ -1,2 +1,74 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<h1>Contact Us </h1>
+<p>This Page is used to contact us with any issues you are facing</p>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">Please fill in the forum to the left. </div>
+    <div class="col-sm-4"><div class="container">
+    <form action="/action_page.php">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Fullname" placeholder="Your Full name..">
+  
+      <label for="email">Email</label>
+      <input type="text" id="email" name="EmailAddress" placeholder="Your Email Address..">
+  
+      <label for="pnumber">Phone Number</label>
+      <input type="text" id="pnumber" name="PhoneNumber" placeholder="Your Phone Number..">
+  
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div></div>
+  </div>
+</div>
+
+</body>
+
+
