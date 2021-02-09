@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'sessions/index'
+  get 'sessions/new'
+  resources :sessions
+  get 'sessions/create'
+  get 'sessions/destroy'
+  resources :users
   get 'novels/index'
   get 'novels/show'
   get 'novels/new'
@@ -35,6 +41,10 @@ Rails.application.routes.draw do
   resources :authors
   resources :genres
   resources :publishers
-  resources :novels
+  resources :novels do
+    collection do
+      get :search
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
