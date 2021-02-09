@@ -1,0 +1,23 @@
+<h1>Authors#index</h1>
+<div class="container">
+<h2> All Authors </h2>
+<table border="1" class="table">
+
+<tr>
+    <th> Author First Name </th>
+    <th> Author Last Name </th>
+    <th> Bio </th>
+</tr>
+
+<% @authors.each do |author| %>
+
+<tr>
+<td> <%= author.fname %> </td>
+<td> <%= author.lname %> </td>
+<td> <%= author.bio %> </td>
+
+
+</tr>
+<% end %>
+</table>
+</div>

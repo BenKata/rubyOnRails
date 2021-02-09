@@ -14,6 +14,11 @@ default: &default
 development:
   <<: *default
   database: bookstore_db
+  database: author_db
+  database: genre_db
+  database: publisher_db
+  database: novel_db
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,7 +26,13 @@ development:
 test:
   <<: *default
   database: bookstore_test
-
+  database: author_test
+  database: genre_test
+  database: publisher_test
+  
 production:
   <<: *default
   database: bookstore_prod
+  database: author_prod
+  database: genre_prod
+  database: publisher_prod
